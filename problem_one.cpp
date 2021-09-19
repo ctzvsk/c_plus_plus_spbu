@@ -8,4 +8,5 @@ int main()
 	cin >> V >> T;
 	point = T * V % 109;
 	cout << point << endl;
+	return 0
 }
