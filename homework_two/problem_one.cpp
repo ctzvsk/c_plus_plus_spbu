@@ -1,27 +1,22 @@
 #include <iostream>
 using namespace std;
 
-void FibNum(int numb)
+ int FibNum(int numb)
 {
-	int a = 1, b = 1, c, i = 0;
+	int a;
 
 	if (numb == 0)
 	{
-		cout << '0' << endl;
+		return 0;
 	}
 	else if ((numb == 1) or (numb == 2))
 	{
-		cout << '1' << endl;
+		return 1;
 	}
 	else
 	{
-		for (i = 1; i <= numb-2; i++)
-		{
-			c = a + b;
-			b = a;
-			a = c;
-		}
-		cout << a << endl;
+		a = FibNum(numb-2) + FibNum(numb-1);
+		return a;
 	}
 }
 int main()
@@ -29,5 +24,5 @@ int main()
 	int d;
 	cout << "type in the number of element of Fibonacci sequence" << endl;
 	cin >> d;
-	FibNum(d);
+	cout << FibNum(d) << endl;
 }
