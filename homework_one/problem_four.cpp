@@ -3,15 +3,13 @@ using namespace std;
 int main()
 {
 	int numb = 0;
+	int a, b, c, d;
 	cout << "type in a 4-digit number" << endl;
 	cin >> numb;
-	if ((numb % 10 == numb / 1000) and ((numb / 100) % 10 == (numb / 10) % 10))
-	{
-		cout << "1" << endl;
-	}
-	else
-	{
-		cout << "0" << endl;
-	}
+	a = numb / 1000;
+	b = (numb / 100) % 10;
+	c = (numb / 10) % 10;
+	d = numb % 10;
+	cout << a - b + c - d << endl;
 	return 0;
 }
