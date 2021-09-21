@@ -1,17 +1,10 @@
-#include <iostream>;
+#include <iostream>
 using namespace std;
 int main()
 {
-	int a, b = 0;
+	int a, b;
 	cout << "type in two integer numbers" << endl;
 	cin >> a >> b;
-	if (a > b)
-	{
-		cout << a << endl;
-	}
-	else
-	{
-		cout << b << endl;
-	}
+	cout << (a / b * a + b / a * b) / (a / b  + b / a) << endl;
 	return 0;
 }
