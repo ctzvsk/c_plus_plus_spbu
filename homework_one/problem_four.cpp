@@ -3,7 +3,10 @@ using namespace std;
 int main()
 {
 	int numb = 0;
-	int a, b, c, d;
+	int a = 0;
+	int b = 0;
+	int c = 0;
+	int d = 0;
 	cout << "type in a 4-digit number" << endl;
 	cin >> numb;
 	a = numb / 1000;
