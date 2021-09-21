@@ -3,7 +3,7 @@ using namespace std;
 
 int BinCo(int n, int k)
 {
-	int a;
+	int a = 0;
 
 	if ((k == 0) or (n == k))
 	{
@@ -17,7 +17,8 @@ int BinCo(int n, int k)
 }
 int main()
 {
-	int a, b;
+	int a = 0;
+	int b = 0;
 	cout << "type in n and k" << endl;
 	cin >> a >> b;
 	cout << BinCo(a, b) << endl;
