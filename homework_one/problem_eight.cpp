@@ -2,7 +2,9 @@
 using namespace std;
 int main()
 {
-	int a, b, c;
+	int a = 0;
+	int b = 0;
+	int c = 0;
 	int odd = 0, even = 0;
 	cout << "type in three integers" << endl;
 	cin >> a >> b >> c;
