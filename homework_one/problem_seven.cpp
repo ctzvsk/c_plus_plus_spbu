@@ -2,7 +2,9 @@
 using namespace std;
 int main()
 {
-	int a, b, c;
+	int a = 0;
+	int b = 0;
+	int c = 0;
 	int max, min, mid;
 	cout << "type in lengths of 3 sides of triangle" << endl;
 	cin >> a >> b >> c;
