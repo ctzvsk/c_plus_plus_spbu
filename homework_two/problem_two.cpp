@@ -22,4 +22,5 @@ int main()
 	cout << "type in n and k" << endl;
 	cin >> a >> b;
 	cout << BinCo(a, b) << endl;
+	return 0;
 }
