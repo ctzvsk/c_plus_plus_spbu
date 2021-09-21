@@ -25,4 +25,5 @@ int main()
 	cout << "type in the number of element of Fibonacci sequence" << endl;
 	cin >> d;
 	cout << FibNum(d) << endl;
+	return 0;
 }
