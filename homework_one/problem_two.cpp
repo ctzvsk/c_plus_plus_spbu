@@ -3,7 +3,10 @@
 using namespace std;
 int main()
 {
-	int h = 0, mm = 0, ss = 0, totals = 0;
+	int h = 0;
+	int mm = 0; 
+	int ss = 0; 
+	int totals = 0;
 	cout << "type in amount of seconds" << endl;
 	cin >> totals;
 	h = totals / 3600;
