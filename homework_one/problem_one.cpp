@@ -6,7 +6,7 @@ int main()
 	int V, T;
 	cout << "Type in speed and time: " << endl;
 	cin >> V >> T;
-	point = T * V % 109;
+	point = (109 + V * T % 109) % 109;
 	cout << point << endl;
 	return 0;
 }
