@@ -3,7 +3,7 @@ using namespace std;
 
  int FibNum(int numb)
 {
-	int a;
+	int a = 0;
 
 	if (numb == 0)
 	{
@@ -21,7 +21,7 @@ using namespace std;
 }
 int main()
 {
-	int d;
+	int d = 0;
 	cout << "type in the number of element of Fibonacci sequence" << endl;
 	cin >> d;
 	cout << FibNum(d) << endl;
