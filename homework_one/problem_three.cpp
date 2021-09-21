@@ -2,7 +2,10 @@
 using namespace std;
 int main()
 {
-	int d, h, a, b = 0;
+	int d  = 0;
+	int h = 0;
+	int a = 0;
+	int b = 0;
 	cout << "type in height of the pole, amount of meters rising each day and amount of meters descending each day" << endl;
 	cin >> h >> a >> b;
 	d = h / (a - b);
