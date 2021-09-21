@@ -1,64 +1,71 @@
+//Я открыл условие на сайте, там было написано что решить нужно для n <= 100, мне делать для условия на сайте или для условия в тимсе?
 #include <iostream>
 using namespace std;
 int main()
 {
-	int ronumb;
-	cout << "type in integer number" << endl;
-	cin >> ronumb;
-	while (ronumb > 1000)
-	{
-		ronumb -= 1000;
-		cout << "M";
-	}
-	while (ronumb > 500)
-	{
-		ronumb -= 500;
-		cout << "D";
-	}
-	while (ronumb > 100)
-	{
-		ronumb -= 100;
-		cout << "C";
-	}
-	while (ronumb > 50)
-	{
-		ronumb -= 50;
-		cout << "L";
-	}
-	while (ronumb > 10)
-	{
-		ronumb -= 10;
-		cout << "X";
-	}
-	switch (ronumb)
-	{
-		case 1:
-			cout << "I" << endl;
-			break;
-		case 2:
-			cout << "II" << endl;
-			break;
-		case 3:
-			cout << "III" << endl;
-			break;
-		case 4:
-			cout << "IV" << endl;
-			break;
-		case 5:
-			cout << "V" << endl;
-			break;
-		case 6:
-			cout << "VI" << endl;
-			break;
-		case 7:
-			cout << "VII" << endl;
-			break;
-		case 8:
-			cout << "VIII" << endl;
-			break;
-		case 9:
-			cout << "IX" << endl;
-			break;
-	}
-	return 0;
+    int n;
+    cin >> n;
+    if (n == 100)
+        cout << "C";
+    else {
+        switch (n / 10) {
+        case 1: 
+            cout << "X"; 
+            break;
+        case 2: 
+            cout << "XX"; 
+            break;
+        case 3: 
+            cout << "XXX"; 
+            break;
+        case 4: 
+            cout << "XL";
+            break;
+        case 5: 
+            cout << "L"; 
+            break;
+        case 6: 
+            cout << "LX"; 
+            break;
+        case 7: 
+            cout << "LXX";
+            break;
+        case 8: 
+            cout << "LXXX";
+            break;
+        case 9: 
+            cout << "XC"; 
+            break;
+        }
+        switch (n % 10) {
+        case 1:
+            cout << "I"; 
+            break;
+        case 2:
+            cout << "II";
+            break;
+        case 3:
+            cout << "III"; 
+            break;
+        case 4: 
+            cout << "IV"; 
+            break;
+        case 5: 
+            cout << "V";
+            break;
+        case 6: 
+            cout << "VI";
+            break;
+        case 7:
+            cout << "VII"; 
+            break;
+        case 8: 
+            cout << "VIII"; 
+            break;
+        case 9:
+            cout << "IX"; 
+            break;
+        }
+    }
+    return 0;
 }
