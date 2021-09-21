@@ -2,22 +2,20 @@
 #include <string>
 using namespace std;
 
-void shortening(string str)
+void shortening(string str, int start_p, int end_p)
 {
-	int a = str.length(), i=0;
-	for (int i = 0; i < str.length() / 2; i++)
+	if (start_p < str.length())
 	{
-		if (str[i] == str[str.length() - i - 1])
+		if ((str[start_p] == str[end_p]) and (start_p != end_p))
 		{
-			str[i] = ' ';
-			str[str.length() - i - 1] = ' ';
+			shortening(str, start_p + 1, end_p - 1);
+		}
+		else if ((str[start_p] != str[end_p]) or (start_p = end_p))
+		{
+			cout << str[start_p];
+				shortening(str, start_p + 1, end_p - 1);
 		}
 	}
-	for (int i = 0; i < str.length(); i++)
-		if (str[i] != ' ')
-		{
-			cout << str[i];
-		}
 }
 
 int main()
@@ -25,6 +23,6 @@ int main()
 	string str_input;
 	cout << "type in the string" << endl;
 	cin >> str_input;
-	shortening(str_input);
+	shortening(str_input, 0, str_input.length()-1);
 	return 0;
 }
