@@ -43,4 +43,5 @@ int main()
     cout << "type in a string" << endl;
     cin >> str_arg;
     parentheses(str_arg);
+    return 0;
 }
