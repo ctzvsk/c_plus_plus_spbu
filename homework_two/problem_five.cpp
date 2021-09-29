@@ -10,7 +10,7 @@ void shortening(string str, int start_p, int end_p)
 		{
 			shortening(str, start_p + 1, end_p - 1);
 		}
-		else if ((str[start_p] != str[end_p]) or (start_p = end_p))
+		else if ((str[start_p] != str[end_p]) or (start_p == end_p))
 		{
 			cout << str[start_p];
 				shortening(str, start_p + 1, end_p - 1);
