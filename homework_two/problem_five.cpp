@@ -24,5 +24,5 @@ int main()
 	cout << "type in the string" << endl;
 	cin >> str_input;
 	shortening(str_input, 0, str_input.length()-1);
-	return EXIT_SUCCESS();
+	return EXIT_SUCCESS;
 }
