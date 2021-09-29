@@ -26,5 +26,5 @@ int main()
     cout << "type in a string" << endl;
     cin >> str_arg;
     parentheses(str_arg, 0);
-    return 0;
+    return EXIT_SUCCESS();
 }
