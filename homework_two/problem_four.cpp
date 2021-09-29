@@ -8,7 +8,12 @@ void parentheses(string str, int start_p)
         cout << '(' << str[start_p];
         parentheses(str, start_p + 1);
     }
-    else if (start_p <= str.length()-1)
+    else if ((str.length() % 2 == 1) and (start_p == str.length() / 2))
+    {
+        cout << '(' << str[start_p] << ')';
+        parentheses(str, start_p + 1);
+    }
+    else if (start_p <= str.length() - 1)
     {
         cout << str[start_p] << ')';
         parentheses(str, start_p + 1);
